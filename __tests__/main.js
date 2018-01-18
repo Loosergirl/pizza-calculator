@@ -20,26 +20,26 @@ Feature: Calculate pizza prices and amount to buy
 describe('Calculate pizza prices and amount to buy', () => {
 
     it('Should calculate how many pizzas are needed', () => {
-		const people = 10;
-		expect(main.calculatePizzaAmount(people)).toEqual(0.5 * people);
+		const people = 5;
+		expect(main.calculatePizzaAmount(people)).toEqual(3);
     })  
 	
 	it('Should calculate cost for the pizzas', () => {
 		const pizzaAmount = 3;
-		expect(main.calculatePizzaPrice(pizzaAmount)).toEqual(100 * pizzaAmount);
+		expect(main.calculatePizzaPrice(pizzaAmount)).toEqual(300);
     })  
 })
 
 describe('Calculate drink prices and amount to buy', () => {
 
     it('Should calculate how many bottles are needed', () => {
-		const people = 6;
-		expect(main.calculateDrinkAmount(people)).toEqual(0.25 * people);
+		const people = 9;
+		expect(main.calculateDrinkAmount(people)).toEqual(3);
     })  
 	
 	it('Should calculate cost for the drinks', () => {
 		const drinkAmount = 2;
-		expect(main.calculateDrinkPrice(drinkAmount)).toEqual(20 * drinkAmount);
+		expect(main.calculateDrinkPrice(drinkAmount)).toEqual(40);
     })  
 })
 

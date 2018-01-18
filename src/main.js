@@ -1,5 +1,5 @@
 function calculatePizzaAmount(people) {
-	return people * 0.5;
+	return Number((people*0.5).toFixed(0));
 }
 
 function calculatePizzaPrice(pizzaAmount) {
@@ -7,7 +7,12 @@ function calculatePizzaPrice(pizzaAmount) {
 }
 
 function calculateDrinkAmount(people) {
-	return people * 0.25;
+	if(people % 4 > 0 ){
+		return ((people - (people % 4)) / 4 + 1);
+//		return Math.ceil(people * 0.25);
+	} else {
+		return people * 0.25;
+	}
 }
 
 function calculateDrinkPrice(drinkAmount) {
