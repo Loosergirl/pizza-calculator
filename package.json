@@ -1,0 +1,16 @@
+{
+  "name": "pizzacalc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^22.1.2",
+    "webpack": "^3.10.0"
+  }
+}
